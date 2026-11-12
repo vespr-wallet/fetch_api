@@ -57,7 +57,6 @@ extension type Request<AbortType extends JSAny>._(JSObject _) implements JSObjec
   ///     the [Request.referrer] is stripped out.
   ///   * If this object has a [Request.mode] of [RequestMode.navigate],
   ///     the mode value is converted to [RequestMode.sameOrigin].
-  @JS('')
   external factory Request._new(JSAny input, [ RequestInit<AbortType>? options, ]);
 
   /// A [ReadableStream] of the body contents.

@@ -28,18 +28,15 @@ extension type ReadableStream<T extends JSAny, AbortType extends JSAny>._(JSObje
   }
 
   /// Creates and returns a readable stream object.
-  @JS('ReadableStream')
   external factory ReadableStream._new$0();
 
   /// Creates and returns a readable stream object from given handlers.
-  @JS('ReadableStream')
   external factory ReadableStream._new$1(
     ReadableStreamSource<T, AbortType>? underlyingSource,
   );
 
   /// Creates and returns a readable stream object from given handlers and
   /// queuing strategy.
-  @JS('ReadableStream')
   external factory ReadableStream._new$2(
     ReadableStreamSource<T, AbortType>? underlyingSource,
     JSObject? queuingStrategy,

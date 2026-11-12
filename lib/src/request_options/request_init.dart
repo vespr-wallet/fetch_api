@@ -46,7 +46,6 @@ extension type RequestInit<AbortType extends JSAny>._(JSObject _) implements JSO
     return options;
   }
 
-  @JS('')
   external factory RequestInit._new({
     String? method,
     Headers? headers,

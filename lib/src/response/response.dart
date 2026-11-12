@@ -32,7 +32,6 @@ extension type Response._(JSObject _) implements JSObject {
     Response._redirect(url, status);
 
   /// Returns a new [Response] object associated with a network error.
-  @JS()
   external factory Response.error();
 
   /// Returns a new [Response] object for returning the provided JSON encoded
@@ -43,10 +42,8 @@ extension type Response._(JSObject _) implements JSObject {
       options,
     )! as Response;
 
-  @JS('')
   external factory Response._new([ JSAny? body, ResponseOptions? options, ]); 
 
-  @JS('redirect')
   external factory Response._redirect(String url, int status);
 
   /// A [ReadableStream] of the body contents.

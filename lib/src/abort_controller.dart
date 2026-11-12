@@ -11,7 +11,6 @@ import 'abort_signal.dart';
 @JS()
 extension type AbortController<T extends JSAny>._(JSObject _) implements JSObject {
   /// Creates a new [AbortController] object instance.
-  @JS('AbortController')
   external factory AbortController();
 
   /// Returns an [AbortSignal] object instance, which can be used

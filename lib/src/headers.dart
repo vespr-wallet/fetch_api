@@ -29,7 +29,6 @@ import 'response.dart';
 /// the [Headers.new] constructor.
 extension type Headers._(JSObject _) implements JSObject {
   /// Creates a new [Headers] object.
-  @JS()
   external factory Headers([Headers? init]);
 
   /// Creates a new [Headers] object.
@@ -42,7 +41,6 @@ extension type Headers._(JSObject _) implements JSObject {
   /// pair is a 2-element string array; or an existing [Headers] object.
   /// In the last case, the new [Headers] object copies its data from
   /// the existing [Headers] object.
-  @JS('Headers')
   external factory Headers._new([JSObject? init]);
 
   /// Creates [Headers] from [Map].
